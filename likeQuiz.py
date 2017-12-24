@@ -1,8 +1,8 @@
-print ("Hello, it's my third commit with git!")
+print("It looks strange, but ...")
 
 myName = ['Vladyslav', 'Vlad']
 mySex = 'Male'
-myTechnologies = ['Python', 'C++', 'SQL']
+myTechnologies = ['Python', 'C++', 'STL', 'Qt', 'SQL', 'Html', 'CSS', 'Django', 'Flask']
 
 
 print("So, maybe you can tell something about yourself =) ")
@@ -17,6 +17,6 @@ for a in range(myName):
     pass
 for a in range(myTechnologies):
     if technologies == myTechnologies[a]:
-        print("I like {tech} too".format(tech == myTechnologies[a]))
+        print("Hmm, {tech} good choise ".format(tech == myTechnologies[a]))
         pass
     pass
