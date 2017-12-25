@@ -11,3 +11,10 @@ Email for contant: data@gmail.com
 Minimal professional experience: 2.5 
 Minimal degree: Master 
 Count of required skills: 6 
+
+Date of Registration form: 2017-12-25 12:51:32 
+Name of Company: bla 
+Email for contant: bla 
+Minimal professional experience: 1.0 
+Minimal degree: bla 
+Count of required skills: 7 

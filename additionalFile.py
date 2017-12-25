@@ -41,20 +41,28 @@ class Recruiter:
         print("If you want to finish, Enter 'quit'. ")
         while True:
             skill = str(input("Enter required skill: "))
-            if skill != 'quit':
-                self.skills.append(skill)
-            else:
-                break
-            pass
+            if skill != 'quit':     self.skills.append(skill)
+            else:   break
 
         self.message        = str(input("Enter some message (Not required): "))
         pass
     pass
 
 
+def matchedSkills(employer, person):
+    mathes = 0
+    for i in range(len(employer.skills)):
+        for j in range(len(person.skills)):
+            if employer.skills[i].upper() == person.skills[j].upper():
+                mathes += 1
+                pass
+            pass
+        pass
+    return mathes
+
 def putDataIntoFile(company, email, experience, degree, matchedSkills):
     readFile = open("RegFile.txt", "a")
-    readFile.write("Date of Registration form: {d} \n".format(d = strftime("%Y-%m-%d %H:%M:%S", gmtime())))
+    readFile.write("\nDate of Registration form: {d} \n".format(d = strftime("%Y-%m-%d %H:%M:%S", gmtime())))
     readFile.write("Name of Company: {c} \n".format(c = company))
     readFile.write("Email for contant: {e} \n".format(e = email))
     readFile.write("Minimal professional experience: {ex} \n".format(ex = experience))
