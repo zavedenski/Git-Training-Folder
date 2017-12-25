@@ -1,5 +1,5 @@
 from time import gmtime, strftime
-
+#====Initialization-of-worker-class============================================
 class Worker:
     def __init__(self):
         self.fullName = "Vladyslav Zavedenski"
@@ -21,7 +21,9 @@ class Worker:
         print("Technologies ==> ", self.skills)
         pass
     pass
+#====Initialization-of-worker-class==END=======================================
 
+#====Initialization-of-employer|recruiter-class================================
 class Recruiter:
     def __init__(self):
         self.nameOfCompany  = "None"
@@ -47,8 +49,9 @@ class Recruiter:
         self.message        = str(input("Enter some message (Not required): "))
         pass
     pass
+#====Initialization-of-employer|recruiter-class==END===========================
 
-
+#----Check-how-many-do-you-have-skills-matches---------------------------------
 def matchedSkills(employer, person):
     mathes = 0
     for i in range(len(employer.skills)):
@@ -59,7 +62,9 @@ def matchedSkills(employer, person):
             pass
         pass
     return mathes
+#----Check-how-many-do-you-have-skills-matches--END----------------------------
 
+#----Take-a-values-from-Recruiter-class-and-put-them-into-file-----------------
 def putDataIntoFile(company, email, experience, degree, matchedSkills):
     readFile = open("RegFile.txt", "a")
     readFile.write("\nDate of Registration form: {d} \n".format(d = strftime("%Y-%m-%d %H:%M:%S", gmtime())))
@@ -70,3 +75,4 @@ def putDataIntoFile(company, email, experience, degree, matchedSkills):
     readFile.write("Count of required skills: {m} \n".format(m = matchedSkills))
     readFile.close()
     pass
+#----Take-a-values-from-Recruiter-class-and-put-them-into-file--END------------
