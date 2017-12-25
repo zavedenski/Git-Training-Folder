@@ -3,4 +3,11 @@ Name of Company: Mobica
 Email for contant: mobica.recrutment@mobica.pl 
 Minimal professional experience: 2.5 
 Minimal degree: Engineer 
+Count of required skills: 6
+ 
+Date of Registration form: 2017-12-25 12:19:40 
+Name of Company: DataAt 
+Email for contant: data@gmail.com 
+Minimal professional experience: 2.5 
+Minimal degree: Master 
 Count of required skills: 6 
